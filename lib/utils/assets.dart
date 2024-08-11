@@ -9,9 +9,33 @@ class Assets {
   /// assets/icons/search.png
   static const String iconsSearch = "assets/icons/search.png";
 
+  /// Assets for images01
+  /// assets/images/01.jpg
+  static const String images01 = "assets/images/01.jpg";
+
+  /// Assets for images02
+  /// assets/images/02.jpg
+  static const String images02 = "assets/images/02.jpg";
+
+  /// Assets for images03
+  /// assets/images/03.jpg
+  static const String images03 = "assets/images/03.jpg";
+
+  /// Assets for images04
+  /// assets/images/04.jpg
+  static const String images04 = "assets/images/04.jpg";
+
+  /// Assets for images05
+  /// assets/images/05.jpg
+  static const String images05 = "assets/images/05.jpg";
+
   /// Assets for images1
   /// assets/images/1.jpg
   static const String images1 = "assets/images/1.jpg";
+
+  /// Assets for images10
+  /// assets/images/10.jpg
+  static const String images10 = "assets/images/10.jpg";
 
   /// Assets for images2
   /// assets/images/2.jpeg
@@ -40,6 +64,10 @@ class Assets {
   /// Assets for images8
   /// assets/images/8.jpg
   static const String images8 = "assets/images/8.jpg";
+
+  /// Assets for images9
+  /// assets/images/9.jpg
+  static const String images9 = "assets/images/9.jpg";
 
   /// Assets for imagesBg
   /// assets/images/bg.png

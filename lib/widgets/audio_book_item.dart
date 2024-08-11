@@ -17,7 +17,7 @@ class AudioBookItem extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            _getTitle(),
+            _getTitle(context),
             const SizedBox(height: 6),
             _getAuther(),
             const SizedBox(height: 6),
@@ -25,6 +25,21 @@ class AudioBookItem extends StatelessWidget {
           ],
         )
       ],
+    );
+  }
+
+  SizedBox _getTitle(BuildContext context) {
+    return SizedBox(
+      // I calculate the size of the text 45 radius + 20 gap + 32 padding
+      width: MediaQuery.sizeOf(context).width - 142,
+      child: Text(
+        bookModel.title,
+        overflow: TextOverflow.ellipsis,
+        style: const TextStyle(
+          fontWeight: FontWeight.w600,
+          fontSize: 18,
+        ),
+      ),
     );
   }
 
@@ -38,22 +53,12 @@ class AudioBookItem extends StatelessWidget {
           ),
         ),
         Text(
-          bookModel.auther,
+          bookModel.author,
           style: const TextStyle(
             fontWeight: FontWeight.w500,
           ),
         )
       ],
-    );
-  }
-
-  Text _getTitle() {
-    return Text(
-      bookModel.title,
-      style: const TextStyle(
-        fontWeight: FontWeight.bold,
-        fontSize: 18,
-      ),
     );
   }
 }

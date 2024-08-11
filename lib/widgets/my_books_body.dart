@@ -14,10 +14,10 @@ class MyBooksBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverPadding(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
+      padding: const EdgeInsets.only(left: 16),
       sliver: SliverToBoxAdapter(
         child: SizedBox(
-          height: 300,
+          height: 270,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: items.length,

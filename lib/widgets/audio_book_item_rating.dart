@@ -7,7 +7,7 @@ class AudioBookRating extends StatelessWidget {
     required this.rating,
   });
 
-  final double rating;
+  final String rating;
 
   @override
   Widget build(BuildContext context) {
@@ -23,6 +23,7 @@ class AudioBookRating extends StatelessWidget {
             ),
           ),
         ),
+        const SizedBox(width: 5),
         Text(
           "$rating Rating",
           style: const TextStyle(

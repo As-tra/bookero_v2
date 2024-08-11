@@ -14,7 +14,7 @@ class AudioBookItemDisque extends StatelessWidget {
   Widget build(BuildContext context) {
     return CircleAvatar(
       backgroundImage: AssetImage(bookModel.image),
-      radius: 55,
+      radius: 45,
       child: Stack(
         children: [
           Align(
@@ -32,7 +32,7 @@ class AudioBookItemDisque extends StatelessWidget {
   Icon _buildDisqueIcon() {
     return Icon(
       Icons.album,
-      size: 50,
+      size: 35,
       color: Colors.white.withOpacity(0.6),
     );
   }

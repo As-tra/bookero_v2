@@ -1,6 +1,9 @@
 class AudioBookModel {
-  final String image, auther, title;
-  final double rating;
+  final String title;
+  final String author;
+  final String image;
+  final String rating;
+  final String price;
 
-  AudioBookModel({required this.image, required this.auther, required this.title, required this.rating});
+  AudioBookModel({required this.title, required this.author, required this.image, required this.rating, required this.price});
 }
