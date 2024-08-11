@@ -1,5 +1,7 @@
 import 'package:bookero_my_version/widgets/custom_app_bar.dart';
 import 'package:bookero_my_version/widgets/landing_section.dart';
+import 'package:bookero_my_version/widgets/my_books_body.dart';
+import 'package:bookero_my_version/widgets/my_books_header.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -11,6 +13,8 @@ class HomeViewBody extends StatelessWidget {
       slivers: [
         CustomAppBar(),
         LandingSection(),
+        MyBooksHeader(),
+        MyBooksBody(),
       ],
     );
   }
