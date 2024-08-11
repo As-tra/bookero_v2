@@ -8,10 +8,11 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
+      expandedHeight: 80,
       pinned: true,
       titleSpacing: 0,
-      expandedHeight: 80,
-      title: Container(
+      collapsedHeight: 80,
+      flexibleSpace: Container(
         padding: const EdgeInsets.symmetric(vertical: 25, horizontal: 16),
         decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -19,7 +20,7 @@ class CustomAppBar extends StatelessWidget {
             end: Alignment.bottomRight,
             colors: [
               AppColors.g1color.withOpacity(0.3),
-              AppColors.g2color.withOpacity(0.3)
+              AppColors.g2color.withOpacity(0.3),
             ],
           ),
         ),

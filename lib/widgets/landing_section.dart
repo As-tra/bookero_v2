@@ -9,7 +9,7 @@ class LandingSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16),
+        padding: const EdgeInsets.only(left: 16, right: 16, top: 16),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(kRadius),
           child: Image.asset(Assets.imagesBg),
