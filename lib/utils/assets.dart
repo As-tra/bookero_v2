@@ -8,5 +8,9 @@ class Assets {
   /// Assets for iconsSearch
   /// assets/icons/search.png
   static const String iconsSearch = "assets/icons/search.png";
+
+  /// Assets for imagesBg
+  /// assets/images/bg.png
+  static const String imagesBg = "assets/images/bg.png";
 }
 

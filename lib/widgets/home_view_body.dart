@@ -1,4 +1,5 @@
 import 'package:bookero_my_version/widgets/custom_app_bar.dart';
+import 'package:bookero_my_version/widgets/landing_section.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -6,9 +7,10 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
+    return const CustomScrollView(
+      slivers: [
         CustomAppBar(),
+        LandingSection(),
       ],
     );
   }
