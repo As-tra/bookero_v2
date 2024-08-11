@@ -1,9 +1,29 @@
 class Assets {
   Assets._();
   
+  /// Assets for iconsBack
+  /// assets/icons/back.png
+  static const String iconsBack = "assets/icons/back.png";
+
+  /// Assets for iconsBook
+  /// assets/icons/book.png
+  static const String iconsBook = "assets/icons/book.png";
+
+  /// Assets for iconsBuy
+  /// assets/icons/buy.png
+  static const String iconsBuy = "assets/icons/buy.png";
+
+  /// Assets for iconsHome
+  /// assets/icons/home.png
+  static const String iconsHome = "assets/icons/home.png";
+
   /// Assets for iconsMenu
   /// assets/icons/menu.png
   static const String iconsMenu = "assets/icons/menu.png";
+
+  /// Assets for iconsSave
+  /// assets/icons/save.png
+  static const String iconsSave = "assets/icons/save.png";
 
   /// Assets for iconsSearch
   /// assets/icons/search.png

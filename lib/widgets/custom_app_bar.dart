@@ -1,5 +1,5 @@
+import 'package:bookero_my_version/constants.dart';
 import 'package:bookero_my_version/utils/assets.dart';
-import 'package:bookero_my_version/utils/colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -14,15 +14,8 @@ class CustomAppBar extends StatelessWidget {
       collapsedHeight: 80,
       flexibleSpace: Container(
         padding: const EdgeInsets.symmetric(vertical: 25, horizontal: 16),
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [
-              AppColors.g1color.withOpacity(0.3),
-              AppColors.g2color.withOpacity(0.3),
-            ],
-          ),
+        decoration: const BoxDecoration(
+          gradient: kGradient,
         ),
         child: Row(
           children: [

@@ -1,6 +1,8 @@
 import 'package:bookero_my_version/constants.dart';
 import 'package:bookero_my_version/models/book_model.dart';
+import 'package:bookero_my_version/utils/app_router.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class MyBooksBody extends StatelessWidget {
   const MyBooksBody({super.key});
@@ -16,20 +18,24 @@ class MyBooksBody extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             itemCount: books.length,
             itemBuilder: (context, index) {
-              return _buildBooksLIstItem(index);
+              return GestureDetector(
+                onTap: () {
+                  GoRouter.of(context).push(
+                    AppRouter.kBookView,
+                    extra: books[index],
+                  );
+                },
+                child: Padding(
+                  padding: const EdgeInsets.only(right: 12),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(kRadius),
+                    child: Image.asset(books[index].image),
+                  ),
+                ),
+              );
             },
           ),
         ),
-      ),
-    );
-  }
-
-  Padding _buildBooksLIstItem(int index) {
-    return Padding(
-      padding: const EdgeInsets.only(right: 12),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(kRadius),
-        child: Image.asset(books[index].image),
       ),
     );
   }
