@@ -1,15 +1,9 @@
 import 'package:bookero_my_version/constants.dart';
-import 'package:bookero_my_version/utils/assets.dart';
+import 'package:bookero_my_version/models/book_model.dart';
 import 'package:flutter/material.dart';
 
 class MyBooksBody extends StatelessWidget {
   const MyBooksBody({super.key});
-
-  static List items = [
-    Assets.images1,
-    Assets.images2,
-    Assets.images3,
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +14,7 @@ class MyBooksBody extends StatelessWidget {
           height: 270,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
-            itemCount: items.length,
+            itemCount: books.length,
             itemBuilder: (context, index) {
               return _buildBooksLIstItem(index);
             },
@@ -35,7 +29,7 @@ class MyBooksBody extends StatelessWidget {
       padding: const EdgeInsets.only(right: 12),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(kRadius),
-        child: Image.asset(items[index]),
+        child: Image.asset(books[index].image),
       ),
     );
   }

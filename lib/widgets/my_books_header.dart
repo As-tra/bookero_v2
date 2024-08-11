@@ -18,9 +18,13 @@ class MyBooksHeader extends StatelessWidget {
             ),
             DottedBorder(
               borderType: BorderType.RRect,
+              color: Colors.grey,
               dashPattern: const [5, 5],
               radius: const Radius.circular(5),
-              child: const Icon(Icons.add),
+              child: const Icon(
+                Icons.add,
+                size: 18,
+              ),
             ),
           ],
         ),

@@ -1,4 +1,4 @@
-import 'package:bookero_my_version/views/home_view.dart';
+import 'package:bookero_my_version/utils/app_router.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 
@@ -14,11 +14,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
-      home: const HomeView(),
+      routerConfig: AppRouter.router,
     );
   }
 }
