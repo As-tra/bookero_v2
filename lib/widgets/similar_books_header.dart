@@ -11,9 +11,8 @@ class SimilarBooksHeader extends StatelessWidget {
         Text(
           "Similar Books",
           style: TextStyle(
-            fontSize: 20,
+            fontSize: 18,
             color: AppColors.g2color,
-            fontWeight: FontWeight.w300,
           ),
         ),
       ],

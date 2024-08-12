@@ -36,7 +36,7 @@ class BookPriceAndReviews extends StatelessWidget {
         const Text(
           'Reviews(192)',
           style: TextStyle(
-            fontSize: 20,
+            fontSize: 18,
             color: AppColors.textColor,
             fontWeight: FontWeight.w500,
           ),

@@ -7,7 +7,7 @@ class SimilarBooksList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 250,
+      height: 230,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: moreBooks.length,

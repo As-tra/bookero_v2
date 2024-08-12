@@ -17,11 +17,16 @@ class BookDetails extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              bookModel.title.toUpperCase(),
-              style: const TextStyle(
-                fontWeight: FontWeight.w500,
-                fontSize: 28,
+            Expanded(
+              child: FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  bookModel.title.toUpperCase(),
+                  style: const TextStyle(
+                    fontWeight: FontWeight.w500,
+                    fontSize: 28,
+                  ),
+                ),
               ),
             ),
           ],
