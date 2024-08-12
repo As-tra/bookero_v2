@@ -61,8 +61,10 @@ class _BookViewState extends State<BookView>
         scrollController: _scrollController,
         bookModel: widget.bookModel,
       ),
-      floatingActionButton:
-          CustomFloatingButtons(opacityAnimation: _opacityAnimation),
+      floatingActionButton: CustomFloatingButtons(
+        opacityAnimation: _opacityAnimation,
+        title: widget.bookModel.title,
+      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }

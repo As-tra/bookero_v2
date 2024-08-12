@@ -1,16 +1,18 @@
-
 import 'package:bookero_my_version/models/book_button_model.dart';
+import 'package:bookero_my_version/utils/app_router.dart';
 import 'package:bookero_my_version/utils/colors.dart';
 import 'package:bookero_my_version/widgets/custom_book_button.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class CustomFloatingButtons extends StatelessWidget {
   const CustomFloatingButtons({
     super.key,
-    required Animation<double> opacityAnimation,
+    required Animation<double> opacityAnimation, required this.title,
   }) : _opacityAnimation = opacityAnimation;
 
   final Animation<double> _opacityAnimation;
+  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +25,9 @@ class CustomFloatingButtons extends StatelessWidget {
             Expanded(
               child: CustomBookButton(
                 buttonModel: BookButtonModel(
-                  () {},
+                  () {
+                    GoRouter.of(context).push(AppRouter.kExcerptView,extra: title,);
+                  },
                   text: 'read excerpt'.toUpperCase(),
                   iconData: Icons.menu_book_outlined,
                   color: AppColors.iColor,
