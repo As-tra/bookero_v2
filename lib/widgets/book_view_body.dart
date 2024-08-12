@@ -1,6 +1,7 @@
 import 'package:bookero_my_version/constants.dart';
 import 'package:bookero_my_version/models/book_model.dart';
 import 'package:bookero_my_version/widgets/book_cover.dart';
+import 'package:bookero_my_version/widgets/book_details.dart';
 import 'package:bookero_my_version/widgets/book_view_app_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +21,8 @@ class BookViewBody extends StatelessWidget {
           const BookViewAppBar(),
           const SizedBox(height: 35),
           BookCover(cover: bookModel.image),
-          
+          const SizedBox(height: 25),
+          BookDetails(bookModel: bookModel),
         ],
       ),
     );

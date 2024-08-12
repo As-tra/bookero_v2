@@ -11,7 +11,7 @@ class BookCover extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Hero(
-      tag: 'book',
+      tag: cover,
       child: Image.asset(
         cover,
         height: 350,

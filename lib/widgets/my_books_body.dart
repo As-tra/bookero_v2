@@ -25,11 +25,14 @@ class MyBooksBody extends StatelessWidget {
                     extra: books[index],
                   );
                 },
-                child: Padding(
-                  padding: const EdgeInsets.only(right: 12),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(kRadius),
-                    child: Image.asset(books[index].image),
+                child: Hero(
+                  tag: books[index].image,
+                  child: Padding(
+                    padding: const EdgeInsets.only(right: 12),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(kRadius),
+                      child: Image.asset(books[index].image),
+                    ),
                   ),
                 ),
               );
