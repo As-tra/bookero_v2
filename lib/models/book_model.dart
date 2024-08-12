@@ -120,11 +120,11 @@ List<AudioBookModel> audioBooks = [
 ];
 
 List<String> moreBooks = [
-  Assets.images01,
-  Assets.images02,
   Assets.images03,
   Assets.images04,
   Assets.images05,
+  Assets.images01,
+  Assets.images02,
 ];
 
 const String excerpt =
