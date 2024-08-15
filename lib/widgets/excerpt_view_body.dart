@@ -1,4 +1,3 @@
-import 'dart:developer';
 
 import 'package:bookero_my_version/widgets/excerpt_app_bar.dart';
 import 'package:bookero_my_version/widgets/excerpt_body.dart';

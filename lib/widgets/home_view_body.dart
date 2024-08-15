@@ -1,6 +1,5 @@
 import 'package:bookero_my_version/widgets/audio_books_header.dart';
 import 'package:bookero_my_version/widgets/audio_books_sliver.dart';
-import 'package:bookero_my_version/widgets/custom_app_bar.dart';
 import 'package:bookero_my_version/widgets/landing_section.dart';
 import 'package:bookero_my_version/widgets/my_books_body.dart';
 import 'package:bookero_my_version/widgets/my_books_header.dart';
@@ -15,7 +14,6 @@ class HomeViewBody extends StatelessWidget {
     timeDilation = 4;
     return const CustomScrollView(
       slivers: [
-        CustomAppBar(),
         LandingSection(),
         MyBooksHeader(),
         MyBooksBody(),
